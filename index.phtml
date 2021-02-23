@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced PHP</title>
+</head>
+
+<body>
+    <h1>Advanced PHP</h1>
+    <hr>
+    <?php session_start() ?>
+    <?php if (isset($_SESSION['username'])) {
+        echo 'New user created ' . $_SESSION['username'];
+    }
+    ?>
+    <h3>Create user</h3>
+    <form method="POST" action="Controller/AccountController.php">
+        <select name="role">
+            <option value="admin">Admin</option>
+            <option value="editor">Editor</option>
+            <option value="customer">Customer</option>
+        </select>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <?php if (isset($_SESSION['product'])) {
+        echo 'New product created ' . $_SESSION['product'];
+    }
+    ?>
+    <h3>Create product</h3>
+    <form method="POST" action="Controller/ProductController.php">
+        <select name="product-type">
+            <option value="fysical">Fysical</option>
+            <option value="download">Download</option>
+            <option value="digital">Digital</option>
+        </select>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
