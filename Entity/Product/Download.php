@@ -1,6 +1,6 @@
 <?php
 
-include_once('../Interface/ProductInterface.php');
+include_once_once('../Interface/ProductInterface.php');
 
 class Download implements ProductInterface
 {

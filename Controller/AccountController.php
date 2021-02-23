@@ -2,9 +2,9 @@
 
 session_start();
 
-include('../Entity/User/Admin.php');
-include('../Entity/User/Customer.php');
-include('../Entity/User/Editor.php');
+include_once('../Entity/User/Admin.php');
+include_once('../Entity/User/Customer.php');
+include_once('../Entity/User/Editor.php');
 
 $selectedRole = $_REQUEST["role"];
 

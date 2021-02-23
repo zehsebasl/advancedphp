@@ -1,11 +1,11 @@
 <?php
 
-abstract class Vehicle 
+abstract class Vehicle
 {
     /**
      * @var object[]
      */
-    public array $data = [];
+    private array $data = [];
 
     public function setPart(string $key, object $value)
     {

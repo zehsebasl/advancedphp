@@ -1,6 +1,8 @@
 <?php
 
-interface Builder{
+include_once ('Parts/Vehicle.php');
+
+interface Builder {
     public function createCehicle();
 
     public function addWheel();

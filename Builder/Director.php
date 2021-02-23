@@ -1,6 +1,6 @@
 <?php
 
-include ('Parts/Vehicle.php');
+include_once ('Parts/Vehicle.php');
 
 class Director
 {

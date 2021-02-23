@@ -1,6 +1,6 @@
 <?php
 
-include_once('../Interface/AccountInterface.php');
+include_once_once('../Interface/AccountInterface.php');
 
 class Admin implements AccountInterface
 {

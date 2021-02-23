@@ -1,4 +1,4 @@
 <?php
 session_start();
 
-include('index.phtml');
+include_once('index.phtml');
