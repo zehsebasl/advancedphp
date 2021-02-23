@@ -2,7 +2,7 @@
 
 include_once ('Parts/Vehicle.php');
 
-class Director
+class VehicleDirector
 {
     public function build(Builder $builder): Vehicle
     {
