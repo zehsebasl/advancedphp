@@ -17,7 +17,7 @@ class Physical implements ProductInterface
 
     public function getProductType()
     {
-        return 'Fysical product';
+        return 'Physical product';
     }
 
     public function productProcess()

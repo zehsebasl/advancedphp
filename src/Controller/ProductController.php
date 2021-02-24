@@ -12,7 +12,7 @@ use Interfaces\ProductInterface;
 
 $selectedProductType = $_REQUEST["product-type"];
 
-class CreateProduct
+class ProductController
 {
     public function create(ProductInterface $productType)
     {
@@ -28,5 +28,5 @@ if ($selectedProductType === 'digital') {
     $productType = new Physical();
 }
 
-$createProduct = new CreateProduct();
+$createProduct = new ProductController();
 $createProduct->create($productType);

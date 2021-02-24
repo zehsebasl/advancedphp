@@ -11,7 +11,7 @@ use Interfaces\AccountInterface;
 
 $selectedRole = $_REQUEST["role"];
 
-class CreateAccount
+class AccountController
 {
   public function create(AccountInterface $userType)
   {
@@ -27,5 +27,5 @@ if ($selectedRole === 'admin') {
   $userType = new Customer();
 }
 
-$createAccount = new CreateAccount();
+$createAccount = new AccountController();
 $createAccount->create($userType);
