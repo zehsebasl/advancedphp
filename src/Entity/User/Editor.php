@@ -1,8 +1,8 @@
 <?php
 
-include_once_once('../Interface/AccountInterface.php');
+use AccountInterface;
 
-class Admin implements AccountInterface
+class Editor implements AccountInterface
 {
     public function createUser()
     {
@@ -10,12 +10,12 @@ class Admin implements AccountInterface
 
     public function getAccountType()
     {
-        return 'Admin';
+        return 'Editor';
     }
 
     public function getUsername()
     {
-        return 'Admin Username.';
+        return 'Editor Username.';
     }
 
     /**

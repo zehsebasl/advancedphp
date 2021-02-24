@@ -2,9 +2,9 @@
 
 session_start();
 
-include_once('../Entity/User/Admin.php');
-include_once('../Entity/User/Customer.php');
-include_once('../Entity/User/Editor.php');
+use Admin;
+use Customer;
+use Editor;
 
 $selectedRole = $_REQUEST["role"];
 

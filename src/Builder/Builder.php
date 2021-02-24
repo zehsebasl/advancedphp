@@ -1,6 +1,8 @@
 <?php
 
-include_once ('Parts/Vehicle.php');
+namespace Builder;
+
+use Vehicle;
 
 interface Builder {
     public function createCehicle();

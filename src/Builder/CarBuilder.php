@@ -1,13 +1,12 @@
 <?php 
 
-include_once ('Parts/Door.php');
-include_once ('Parts/Engine.php');
-include_once ('Parts/Wheel.php');
-include_once ('Parts/Car.php');
-include_once ('Parts/Vehicle.php');
+use Door;
+use Engine;
+use Wheel;
+use Car;
+use Vehicle;
 
-include_once ('Builder.php');
-
+use Builder;
 
 class CarBuilder implements Builder
 {

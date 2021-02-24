@@ -1,6 +1,8 @@
 <?php
 
-include_once ('../Builder/TruckBuilder.php');
+namespace Commands;
+
+use TruckBuilder;
 
 $truck = new TruckBuilder;
 $truck->createCehicle();

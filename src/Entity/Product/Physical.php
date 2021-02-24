@@ -1,8 +1,8 @@
 <?php
 
-include_once_once('../Interface/ProductInterface.php');
+use ProductInterface;
 
-class Digital implements ProductInterface
+class Physical implements ProductInterface
 {
     public function createProduct()
     {
@@ -10,12 +10,12 @@ class Digital implements ProductInterface
 
     public function getProductName()
     {
-        return 'Windows 10';
+        return 'Windows 10 cd key in box';
     }
 
     public function getProductType()
     {
-        return 'Digital product';
+        return 'Fysical product';
     }
 
     public function productProcess()

@@ -1,6 +1,6 @@
 <?php
 
-include_once ('Parts/Vehicle.php');
+use Vehicle;
 
 class VehicleDirector
 {

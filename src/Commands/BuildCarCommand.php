@@ -1,6 +1,8 @@
 <?php
 
-include_once('../Builder/CarBuilder.php');
+namespace Commands;
+
+use CarBuilder;
 
 $car = new CarBuilder;
 $car->createCehicle();

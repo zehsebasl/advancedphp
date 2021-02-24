@@ -1,8 +1,8 @@
 <?php
 
-include_once_once('../Interface/AccountInterface.php');
+use AccountInterface;
 
-class Customer implements AccountInterface
+class Admin implements AccountInterface
 {
     public function createUser()
     {
@@ -10,14 +10,17 @@ class Customer implements AccountInterface
 
     public function getAccountType()
     {
-        return 'Customer';
+        return 'Admin';
     }
 
     public function getUsername()
     {
-        return 'Customer Username.';
+        return 'Admin Username.';
     }
 
+    /**
+     * Store user in database
+     */
     public function accountProcess()
     {
         $_SESSION['username'] = $this->getUsername();

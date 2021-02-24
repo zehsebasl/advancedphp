@@ -2,9 +2,9 @@
 
 session_start();
 
-include_once('../Entity/Product/Digital.php');
-include_once('../Entity/Product/Download.php');
-include_once('../Entity/Product/Physical.php');
+use Digital;
+use Download;
+use Physical;
 
 $selectedProductType = $_REQUEST["product-type"];
 
