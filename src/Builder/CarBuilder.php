@@ -2,13 +2,11 @@
 
 namespace Builder;
 
-use Door;
-use Engine;
-use Wheel;
-use Car;
-use Vehicle;
-
-use Builder;
+use Builder\Parts\Door;
+use Builder\Parts\Engine;
+use Builder\Parts\Wheel;
+use Builder\Parts\Car;
+use Builder\Parts\Vehicle;
 
 class CarBuilder implements Builder
 {
@@ -34,7 +32,7 @@ class CarBuilder implements Builder
         $this->car->setPart('wheelRR', new Wheel());
     }
 
-    public function createCehicle()
+    public function createVehicle()
     {
         $this->car = new Car();
     }

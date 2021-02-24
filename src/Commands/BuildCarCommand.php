@@ -2,10 +2,10 @@
 
 namespace Commands;
 
-use CarBuilder;
+use Builder\CarBuilder;
 
 $car = new CarBuilder;
-$car->createCehicle();
+$car->createVehicle();
 
 $car->addDoors();
 $car->addEngine();

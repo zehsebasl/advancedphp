@@ -2,10 +2,10 @@
 
 namespace Commands;
 
-use TruckBuilder;
+use Builder\TruckBuilder;
 
 $truck = new TruckBuilder;
-$truck->createCehicle();
+$truck->createVehicle();
 
 $truck->addWheel();
 $truck->addDoors();

@@ -2,7 +2,7 @@
 
 namespace Entity\User;
 
-use AccountInterface;
+use Interfaces\AccountInterface;
 
 class Admin implements AccountInterface
 {

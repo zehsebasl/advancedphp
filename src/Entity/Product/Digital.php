@@ -2,7 +2,7 @@
 
 namespace Entity\Product;
 
-use ProductInterface;
+use Interfaces\ProductInterface;
 
 class Digital implements ProductInterface
 {

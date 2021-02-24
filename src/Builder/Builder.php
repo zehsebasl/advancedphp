@@ -2,10 +2,10 @@
 
 namespace Builder;
 
-use Vehicle;
+use Builder\Parts\Vehicle;
 
 interface Builder {
-    public function createCehicle();
+    public function createVehicle();
 
     public function addWheel();
 

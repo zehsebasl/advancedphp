@@ -4,9 +4,11 @@ namespace Controller;
 
 session_start();
 
-use Digital;
-use Download;
-use Physical;
+use Entity\Product\Digital;
+use Entity\Product\Download;
+use Entity\Product\Physical;
+
+use Interfaces\ProductInterface;
 
 $selectedProductType = $_REQUEST["product-type"];
 

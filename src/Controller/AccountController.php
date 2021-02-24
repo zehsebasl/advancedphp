@@ -4,9 +4,10 @@ namespace Controller;
 
 session_start();
 
-use Admin;
-use Customer;
-use Editor;
+use Entity\User\Admin;
+use Entity\User\Customer;
+use Entity\User\Editor;
+use Interfaces\AccountInterface;
 
 $selectedRole = $_REQUEST["role"];
 

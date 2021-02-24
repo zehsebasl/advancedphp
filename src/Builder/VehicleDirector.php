@@ -2,13 +2,13 @@
 
 namespace Builder;
 
-use Vehicle;
+use Builder\Parts\Vehicle;
 
 class VehicleDirector
 {
     public function build(Builder $builder): Vehicle
     {
-        $builder->createCehicle();
+        $builder->createVehicle();
         $builder->addDoors();
         $builder->addEngine();
         $builder->addWheel();
