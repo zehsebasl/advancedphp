@@ -1,5 +1,7 @@
 <?php
 
+namespace Entity\User;
+
 use AccountInterface;
 
 class Editor implements AccountInterface

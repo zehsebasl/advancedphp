@@ -1,5 +1,7 @@
 <?php
 
+namespace Interface;
+
 interface AccountInterface
 {
     public function createUser();

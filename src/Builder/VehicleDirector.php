@@ -1,5 +1,7 @@
 <?php
 
+namespace Builder;
+
 use Vehicle;
 
 class VehicleDirector

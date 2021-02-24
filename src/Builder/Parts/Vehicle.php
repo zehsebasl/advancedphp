@@ -1,5 +1,7 @@
 <?php
 
+namespace Builder\Parts;
+
 abstract class Vehicle
 {
     /**

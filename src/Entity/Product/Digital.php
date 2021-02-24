@@ -1,5 +1,7 @@
 <?php
 
+namespace Entity\Product;
+
 use ProductInterface;
 
 class Digital implements ProductInterface

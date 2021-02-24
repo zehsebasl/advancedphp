@@ -1,5 +1,7 @@
 <?php 
 
+namespace Builder;
+
 use Door;
 use Engine;
 use Wheel;

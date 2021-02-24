@@ -1,6 +1,8 @@
 <?php
 
-include_once ('Vehicle.php');
+namespace Builder\Parts;
+
+use Vehicle;
 
 class Truck extends Vehicle
 {

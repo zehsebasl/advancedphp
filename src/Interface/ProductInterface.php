@@ -1,5 +1,7 @@
 <?php
 
+namespace Interface;
+
 interface ProductInterface
 {
     public function createProduct();
